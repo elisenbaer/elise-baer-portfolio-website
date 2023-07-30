@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" href="https://www.wikipedia.org/static/favicon/wikipedia.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elise Baer - Portfolio</title>
+    <link rel="normalizesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <header class="page-header">
+        <div>
+            <img src="img/elise-baer-rect-logo-trans.svg" alt="Elise Baer Web Design Logo" class="page-header__item">
+        </div>
+
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>   
+
+    <main class="contact">
+        <h1 class="contact__header">Contact</h1>
+        <h2>Elise Baer</h2>
+        <p>
+            870 NW 12th Street<br>
+            Bend, OR 97703<br>
+            United States of America<br>
+        </p>
+        <a href="tel:+16469433633">Call Me: +1-646-943-3633</a>
+        <br>
+        <a href="mailto:elisenbaer(at)gmail(dot)com">Email Me: elisenbaer@gmail.com</a>
+        <br>
+      
+    </main>
+    
+    <br>
+
+
+    <h2 class="message-form__header">Send Me a Message</h2>
+
+    <form action="submit" method="post" class="message-form">
+        <div>
+            <label class="standard-label" for="contact-email">Email:</label>
+            <input type="email" id="contact-email" placeholder="*" required>
+         </div>
+            <!-- <br> -->
+        <div>
+            <label class="standard-label" for="contact-phone">Phone:</label>
+            <input type="tel" pattern="\d{3}[\-]\d{3}[|-]\d{4}" id="contact-phone">
+        </div>
+             <!-- <br> -->
+        <div>
+            <label class="standard-label" for="message">Message:</label>
+            <textarea maxlength="240" id="message" placeholder="*" required></textarea>
+        </div>
+            <!-- <br> -->
+        <!-- <input type="submit" value="Send Message"> -->
+        <div id="submit-button">
+            <p>* = Required Field</p>
+            <input type="submit" value="Send Message">
+        </div>
+    </form>
+        
+        
+
+    <footer class="page-footer">
+        <p>Find me on</p>
+        <div class="social-media">
+            <img src="img/github_icon.svg" alt="GitHub Logo" class="social-media__button">
+            <img src="img/twitter_icon.svg" alt="Twitter Logo" class="social-media__button">
+            <img src="img/instagram_icon.svg" alt="Instagram Logo" class="social-media__button">
+        </div>
+    </footer>
+    
+    <script src="js/tota11y.min.js"></script>
+</body>
+</html>
+
