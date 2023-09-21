@@ -37,23 +37,50 @@
         </nav>
     </header>   
 
-    <main class="profile">
-        <h1>Hi there!</h1>
-        <!-- Profile Picture here -->
-        <img src="img/elise-baer-profile-picture.JPG" class="profile__picture" alt="Elise Baer Profile Picture">
-        <!-- <h1>Hello World!</h1> -->
-        <p>My name is Elise Baer. I am a <span>web </span> development student at Career Foundry.</p>
-        <p>I am exploring the wornderful world of web design and development.</p>
-        <p>I cannot wait to learn more, and share with you!</p>
-        
+    <main class="contact">
+        <h1 class="contact__header">Contact</h1>
+        <h2>Contact Elise Baer</h2>
+        <p>
+            870 NW 12th Street<br>
+            Bend, OR 97703<br>
+            United States of America<br>
+        </p>
+        <a href="tel:+16469433633">Call Me: +1-646-943-3633</a>
         <br>
-
-        <div class="button__work">
-            <a href="work.html">Check out some of my code</a>
-            <br>
-            <button type="button">Click Here!</button>
-        </div>
+        <a href="mailto:elisenbaer(at)gmail(dot)com">Email Me: elisenbaer@gmail.com</a>
+        <br>
+      
     </main>
+    
+    <br>
+
+
+    <h2 class="message-form__header">Send Me a Message</h2>
+
+    <form action="submit" method="post" class="message-form">
+        <div>
+            <label class="standard-label" for="contact-email">Email:</label>
+            <input type="email" id="contact-email" placeholder="*" required>
+         </div>
+            <!-- <br> -->
+        <div>
+            <label class="standard-label" for="contact-phone">Phone:</label>
+            <input type="tel" pattern="\d{3}[\-]\d{3}[|-]\d{4}" id="contact-phone">
+        </div>
+             <!-- <br> -->
+        <div>
+            <label class="standard-label" for="message">Message:</label>
+            <textarea maxlength="240" id="message" placeholder="*" required></textarea>
+        </div>
+            <!-- <br> -->
+        <!-- <input type="submit" value="Send Message"> -->
+        <div id="submit-button">
+            <p>* = Required Field</p>
+            <input type="submit" value="Send Message">
+        </div>
+    </form>
+        
+        
 
     <footer class="page-footer">
         <p>Find me on</p>
@@ -63,9 +90,8 @@
             <img src="img/instagram_icon.svg" alt="Instagram Logo" class="social-media__button">
         </div>
     </footer>
-
+    
     <script src="js/tota11y.min.js"></script>
-    <script src="main.js"></script>
 </body>
-
 </html>
+
